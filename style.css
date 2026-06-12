@@ -1,14 +1,35 @@
-body{
+body {
     background-color: black;
 }
 
-.navi{
+header {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2Y1NjJhYWY0LTVkYmItNDYwMy1hMzJiLTZlZjZjMjIzMDEzNi9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FScrpAAFnKqBVKwe2syeiOww6mfH6avq-DRHZ_uFVNw");
+    background-size: cover;
+    background-position: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.636);
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+.navi {
     width: 80vw;
     display: flex;
     justify-content: flex-end;
 }
 
-.btnlang{
+.btnlang {
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -18,7 +39,7 @@ body{
     margin: 30px 0px 0px 7px;
 }
 
-.signin{
+.signin {
     background-color: red;
     color: white;
     border: 1px solid white;
@@ -28,14 +49,14 @@ body{
     margin: 30px 0px 0px 7px;
 }
 
-.container1{
+.container1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.heading1{
+.heading1 {
     color: white;
     font-family: Poppins, sans-serif;
     font-weight: bolder;
@@ -43,14 +64,15 @@ body{
     margin: 25px;
     padding: 150px 0px 0px 0px;
 }
-.heading2{
+
+.heading2 {
     color: white;
     font-weight: 400;
     font-size: 24px;
     margin: 25px;
 }
 
-.heading3{
+.heading3 {
     color: white;
     font-family: Poppins, sans-serif;
     padding: 0px;
@@ -59,7 +81,7 @@ body{
     font-weight: bolder;
 }
 
-.enter{
+.enter {
     background-color: black;
     padding: 7px 101px 8px 14px;
     border-radius: 4px;
@@ -67,9 +89,10 @@ body{
     border-style: solid;
 }
 
-.enter::placeholder{
+.enter::placeholder {
     color: rgb(118, 118, 118);
 }
+
 .start {
     background-color: red;
     color: white;
@@ -81,87 +104,96 @@ body{
     margin: 0px 0px 150px 7px;
 }
 
-.section1{
+.section1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.line{
+
+.line {
     width: 100%;
     height: 7px;
     background-color: rgb(65, 65, 65);
 }
 
-.enjoy{
+.enjoy {
     color: white;
 }
-.enjoy1{
+
+.enjoy1 {
     font-size: 48px;
     font-weight: bolder;
     font-family: Poppins, sans-serif;
 }
 
-.enjoy2{
-    font-size: 24px;
-    font-family: Poppins, sans-serif;
-}
-.enjoy3{
-    font-size: 24px;
-    font-family: Poppins, sans-serif;
-}
-.enjoy4{
+.enjoy2 {
     font-size: 24px;
     font-family: Poppins, sans-serif;
 }
 
-.section2{
+.enjoy3 {
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+}
+
+.enjoy4 {
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+}
+
+.section2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 0px px 0px;
 }
 
-.download{
+.download {
     color: white;
     font-family: Poppins, sans-serif;
 }
 
-.download1{
+.download1 {
     font-size: 48px;
     font-weight: bolder;
 }
-.download2{
+
+.download2 {
     font-size: 48px;
     font-weight: bolder;
 }
-.download3{
+
+.download3 {
     font-size: 48px;
     font-weight: bolder;
 }
-.download4{
-    font-size: 24px;
-}
-.download5{
+
+.download4 {
     font-size: 24px;
 }
 
-.section3{
+.download5 {
+    font-size: 24px;
+}
+
+.section3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tv{
+.tv {
     position: relative;
     width: 555px;
 }
 
-.tv img{
+.tv img {
     width: 100%;
     display: block;
     z-index: 2;
 }
-.tv-video{
+
+.tv-video {
     position: absolute;
     z-index: 1;
     top: 21%;
@@ -170,69 +202,76 @@ body{
     height: 54%;
     object-fit: cover;
 }
-.watch{
+
+.watch {
     color: white;
     font-family: Poppins, sans-serif;
 }
 
-.watch1{
+.watch1 {
     font-size: 48px;
     font-weight: bolder;
 }
 
-.watch2{
-    font-size: 24px;
-}
-.watch3{
+.watch2 {
     font-size: 24px;
 }
 
-.section4{
+.watch3 {
+    font-size: 24px;
+}
+
+.section4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.create{
+.create {
     color: white;
     font-family: Poppins, sans-serif;
 }
 
-.create1{
+.create1 {
     font-size: 48px;
     font-weight: bolder;
 }
-.create2{
+
+.create2 {
     font-size: 48px;
     font-weight: bolder;
 }
-.create3{
-    font-size: 24px;
-}
-.create4{
-    font-size: 24px;
-}
-.create5{
+
+.create3 {
     font-size: 24px;
 }
 
-.section5{
+.create4 {
+    font-size: 24px;
+}
+
+.create5 {
+    font-size: 24px;
+}
+
+.section5 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.faq1{
+.faq1 {
     color: white;
     font-family: Poppins, sans-serif;
 }
 
 
-.que{
+.que {
     font-size: 48px;
     margin: 50px 0px 50px 140px;
 }
-.btn{
+
+.btn {
     color: white;
     font-family: Poppins, sans-serif;
     display: block;
@@ -247,19 +286,19 @@ body{
     padding: 0px 20px 0px 25px
 }
 
-.faqlast{
+.faqlast {
     margin: 0px 0px 60px 0px;
 }
 
-.footin{
+.footin {
     color: white;
 }
 
-.question{
-        margin: 80px 0px 30px 250px;
+.question {
+    margin: 80px 0px 30px 250px;
 }
 
-.links{
+.links {
     color: white;
     width: 70vw;
     display: grid;
@@ -268,7 +307,7 @@ body{
     margin: 0px 0px 60px 250px;
 }
 
-.col a{
+.col a {
     display: block;
     margin: 8px 0;
     text-decoration: none;
